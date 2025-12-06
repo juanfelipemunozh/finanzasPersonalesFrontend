@@ -1,0 +1,114 @@
+.background-login  {
+    /* background-image: url("../../img/background.jpg"); */
+    background: linear-gradient(rgb(5, 112, 235), rgb(140, 128, 128));
+    background-size: 100%;
+    height: 1080px;
+    background-repeat: no-repeat;
+}
+
+h1.titulo {
+    text-align: center;
+    padding: 90px 0 20px 0;
+    font-size: 45px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.form-container {
+    margin: 50px auto;
+    max-width: 50%;
+    padding: 50px;
+    border: 0.5px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0.402);
+}
+
+.notificacion {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    margin: 10px;
+    padding: 0 8px;
+    background-color: rgb(14, 121, 39);
+    border-radius: 10px;
+}
+
+.font-medium {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.input-login {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+.btn-login {    
+    color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 6px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.btn-login:hover {
+    background-color: rgb(255, 255, 255);
+    color: white;
+    width: 100%;
+    padding: 6px;
+    border-radius: 20px;
+    transition: 0.5s;
+    color: black;
+}
+
+.login-options {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.login-option {
+    padding: 8px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    color: white;
+}
+
+.login-option:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+
+@media screen and (max-width: 732px) {
+    .form-container {
+        max-width: 85%;
+    }
+
+    .login-options {
+        padding: 10px 0;
+    }
+
+    .login-option {
+        margin: 0 10px;
+    }
+
+    .background-login {
+        height: 1000px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+}

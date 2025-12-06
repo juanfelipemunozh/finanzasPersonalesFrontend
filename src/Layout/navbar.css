@@ -1,0 +1,134 @@
+h1 {
+    padding: 10px 0;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 15px 50px;
+    box-shadow: 0 0px 0px;
+    background-color: black;
+    text-align: center;
+}
+
+.nav-contenedor ul.nav-links-items {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.nav-list-item {
+    width: auto
+}
+
+li.nav-list-item a {
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 10px 5px;
+    transition: 0.5s;
+    color: white;
+    letter-spacing: 1px
+}
+
+li.nav-list-item a:hover {
+    color: #f1c40f;
+    border-bottom: 1px #f1c40f solid;
+    transition: 0.5s
+}
+
+.hide {
+    top: 70px;
+    transition: 0.5s;
+    position: fixed;
+    top: 76px;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    padding: 15px 0 45px 0;
+}
+
+#nav-links ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    box-shadow: 0px 0px 0px;
+    background-color: black;
+}
+
+#nav-links ul .nav-list-item {
+    float: none;
+    padding: 0 0 25px 0;
+}
+
+#nav-links li.nav-list-item:hover ul {
+    display: block;
+}
+
+
+@media screen and (max-width: 960px) {
+    .hamburguesa {
+        display: flex;
+        gap: 8px;
+        flex-direction: column;
+        cursor: pointer;
+        padding: 10px;
+        margin-right: -10px;
+        background-color: black;
+    }
+
+    .lineas {
+        display: block;
+        background-color: white;
+        height: 4px;
+        width: 35px; 
+    }
+
+    .lineas-rotate {
+        background-color: rgb(89, 89, 89);
+        border-radius: 5px;
+    }
+
+    nav {
+        position: relative;
+        padding: 15px 20px;
+        background-color: rgb(0, 0, 0);
+    }
+
+    .nav-links-items {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        padding: 35px 0;
+        border-radius: 0 0 80px 80px;
+        box-shadow: 0px 0px 0px;
+        background-color: rgba(0, 0, 0, 0.930);
+        transition: 0.5s;
+    }
+
+    li a.links {
+        color: white;
+        padding: 2px 0;
+    }
+
+    .nav-list-item {
+        text-align: center;
+        width: 90vw
+    }
+
+    li a:hover {
+        font-weight: bold;
+        color: #f1c40f;
+        border: none;
+        letter-spacing: 3px;
+        transition: 0.5s
+    }
+}
+
+

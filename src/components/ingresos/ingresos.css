@@ -1,0 +1,54 @@
+/* Resumen presupuesto */
+.contenedor-ingreso {
+    background-position: center;
+    position: relative;
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    background-color: white;
+    background: linear-gradient(#000000, #4474b7);
+}
+
+.ingreso {
+    position: absolute;
+    width: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffff;
+}
+
+.ingreso_titulo{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.ingreso_valor {
+    font-weight: 300;
+    font-size: 46px;
+    text-align: center;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+
+.contenedor-grafico {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px 0 25px 0;
+}  
+
+.contenedor-grafico h2 {
+    text-align: center;
+    color: #1d3557;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.grafico {
+    margin: auto;
+    min-width: 50%;
+}

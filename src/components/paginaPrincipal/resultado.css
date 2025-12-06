@@ -1,0 +1,203 @@
+/* Resumen presupuesto */
+.contenedor-presupuesto {
+    background-position: center;
+    position: relative;
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    background-color: white;
+    background: linear-gradient(#000000, #2a5a9c);
+}
+
+.presupuesto {
+    position: absolute;
+    width: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffff;
+}
+
+.presupuesto_titulo {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.presupuesto_valor {
+    font-weight: 300;
+    font-size: 46px;
+    text-align: center;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+
+/* gastos fijos */ 
+.titulo-gasto-fijo {
+    font-weight: 700;
+    text-align: center;
+    font-size: 20px;
+    color :#1d3557
+}
+
+
+.contenedor-gastos-fijos {
+        background-position: center;
+        position: relative;
+        width: 100%;
+        padding: 25px 0;
+        padding-bottom: 100px;
+        background: #ffff;          
+        border-bottom: 5px solid rgb(95, 96, 110);
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+}
+
+.tabla-gastos-fijos {
+    margin: auto;   
+}
+
+.tabla-gastos-fijos .contenido-gastos-fijos, td { 
+    border-collapse: collapse;
+    padding: 5px 10px;
+}
+
+.contenido-gastos-fijos {
+    color: #ffff;
+    background-color: #1d3557;
+}
+
+
+tr:nth-child(even){
+    background-color: #f1faee;
+}
+
+.btn-editar {
+    background-color: #40b33c;
+    color: #ffff;
+    padding: 3px 8px;
+    border-radius: 5px;
+    margin: 5px 0;
+    transition: 0.5s;
+}
+
+.btn-editar:hover {
+    background-color: #359432;
+}
+
+.btn-eliminar {
+    background-color: #bd3333;
+    color: #ffff;
+    padding: 3px 8px;
+    border-radius: 5px;
+    margin: 5px 0;
+    transition: 0.5s;
+}
+
+.btn-eliminar:hover {
+    background-color: #912626;
+}
+
+.btn-detalle {
+    display: none;
+}
+
+.btn-agregar {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    margin: 10px;
+    position: relative;
+    left: 65%;
+    border-radius: 5px; 
+    transition: 0.5s;
+}
+
+.btn-agregar:hover {
+    background-color: #0056b3;
+  }
+
+
+.paginacion {
+    margin: 20px;
+    text-align: center;
+    color: #1d3557;
+    font-size: 20px;
+}
+
+.paginacion button {
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+.paginacion button:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+
+.contenedor-grafico {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px 0 25px 0;
+    width: 50%;
+    margin: 0 auto;
+}  
+
+.contenedor-grafico h2 {
+    text-align: center;
+    color: #1d3557;
+    font-weight: 700;
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+.grafico {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+}
+
+.Tabs {
+    width: 50%;
+    height: 50%;
+}
+
+@media screen and (max-width: 540px) {
+    tr {
+        font-size: 16px;
+    }
+
+    .ocultar {
+        display: none;
+    }
+
+    .btn-detalle  {
+        display: block;
+        background-color: #b55cd8;
+        color: #ffff;
+        padding: 3px 8px;
+        border-radius: 5px;
+        margin: 5px 0;
+        transition: 0.5s;
+    }
+
+    .btn-detalle:hover {
+        background-color: #984eb6;
+    }
+
+    .contenedor-grafico {
+        width: 100%;
+        height: 400px;
+    }
+
+    .grafico {
+        margin-top: 0;
+        width: 50%;
+        
+    }
+}
