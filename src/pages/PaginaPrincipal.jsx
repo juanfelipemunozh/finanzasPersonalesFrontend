@@ -1,4 +1,4 @@
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import Layout from "../Layout/Layout"
 import Resultado from "../components/paginaPrincipal/Resultado"
 import { useNavigate } from "react-router-dom";
